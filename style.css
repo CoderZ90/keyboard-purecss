@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dde1e7;
+  flex-direction: column;
+}
+.container {
+  width: 60%;
+}
+.wrapper {
+  min-width: 750px;
+  max-width: 1000px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73,
+              2px 2px 5px rgba(94, 104, 121, 0.2);
+
+}
+
+.wrapper .keys {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .keys input {
+  height: 50px;
+  min-width: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #dde1ef;
+  box-shadow: -3px -3px 7px #ffffff73,
+              2px 2px 5px rgba(94, 104, 121, 0.2);
+  margin: 10px;
+  color: grey;
+  font-size: 18px;
+  cursor: default;
+  border-radius: 5px;
+}
+/* we say that when we focus on the input buttons then */
+.wrapper .keys input:focus {
+  font-size: 16px;
+  color: #4561ff;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+              inset 2px 2px 5px rgba(94, 104, 121, 0.2);
+
+}
+/* this means select input which have the Value of "SPACE" */
+.wrapper .keys input[value="SPACE"] {
+  width: 60%;
+  margin-top: 20px;
+}
